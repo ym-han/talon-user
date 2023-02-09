@@ -194,7 +194,7 @@ mod.list(
 mod.list("formatter_prose", desc="List of prose formatters")
 FORMATTER_PROSE = {
     "say": "NOOP",
-    "sentence": "CAPITALIZE_FIRST",
+    "line": "CAPITALIZE_FIRST",
 }
 ctx.lists["self.formatter_prose"] = FORMATTER_PROSE
 

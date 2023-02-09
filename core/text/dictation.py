@@ -67,7 +67,9 @@ def capture_to_chunks(m: Capture) -> Sequence[Any]:
     for item in m:
         if isinstance(item, Phrase):
             item = actions.dictate.parse_words(item)
-            item = actions.user.replace_phrases(item)
+            item = actions.dictate.replace_words(item) 
+            # for some reason the `replace_phrases` action can't be found
+            # item = actions.user.replace_phrases(item)
             chunks.extend(item)
         elif isinstance(item, str):
             chunks.extend(item.split(" "))

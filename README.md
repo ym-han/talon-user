@@ -1,6 +1,8 @@
+This is my fork of Wen Kokke's talon user scripts.
+
 # Organization
 
-- `apps/` contains Talon scripts associated with applications, e.g., Firefox;
+- `apps/` contains Talon scripts associated with applications, e.g., Safari;
 - `core/` contains Talon scripts which are always running;
 - `tags/` contains Talon scripts which are activated by a certain tag;
 - `tags/code/` contains Talon scripts which are associated with a programming language, e.g., Haskell;
